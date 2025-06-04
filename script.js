@@ -1,3 +1,6 @@
+//desarrollar-aplicación-de-estudio-para-examen-de-ciudadanía
+// La variable global "questions" con 250 preguntas se carga desde questions.js
+
 // Banco de preguntas de ejemplo. Puedes expandirlo con todas las preguntas de "Discover Canada".
 const questions = [
     {
@@ -27,6 +30,7 @@ const questions = [
     }
     // Agrega aquí el resto de preguntas del libro
 ];
+
 
 const totalExamQuestions = 20;
 let examQuestions = [];
