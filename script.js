@@ -1,4 +1,36 @@
+//desarrollar-aplicación-de-estudio-para-examen-de-ciudadanía
 // La variable global "questions" con 250 preguntas se carga desde questions.js
+
+// Banco de preguntas de ejemplo. Puedes expandirlo con todas las preguntas de "Discover Canada".
+const questions = [
+    {
+        question: "¿Cuál es la capital de Canadá?",
+        options: ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+        answer: 1
+    },
+    {
+        question: "¿Quién es la jefa de Estado de Canadá?",
+        options: ["El Primer Ministro", "La Reina", "El Gobernador General", "El Presidente"],
+        answer: 1
+    },
+    {
+        question: "¿Cuántas provincias tiene Canadá?",
+        options: ["10", "3", "13", "5"],
+        answer: 0
+    },
+    {
+        question: "¿Cuál es el animal nacional de Canadá?",
+        options: ["Castor", "Alce", "Ganso", "Caribú"],
+        answer: 0
+    },
+    {
+        question: "¿Qué representan las hojas de arce en la bandera canadiense?",
+        options: ["La naturaleza", "Las provincias", "La independencia", "La corona"],
+        answer: 1
+    }
+    // Agrega aquí el resto de preguntas del libro
+];
+
 
 const totalExamQuestions = 20;
 let examQuestions = [];
