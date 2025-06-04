@@ -1,3 +1,7 @@
+
+// La variable global "questions" con 250 preguntas se carga desde questions.js
+
+
 //desarrollar-aplicación-de-estudio-para-examen-de-ciudadanía
 // La variable global "questions" con 250 preguntas se carga desde questions.js
 
@@ -31,7 +35,6 @@ const questions = [
     // Agrega aquí el resto de preguntas del libro
 ];
 
-
 const totalExamQuestions = 20;
 let examQuestions = [];
 let currentQuestionIndex = 0;
@@ -40,6 +43,8 @@ let wrongCount = 0;
 
 const statsDiv = document.getElementById('stats');
 const questionContainer = document.getElementById('question-container');
+
+const progressDiv = document.getElementById('progress');
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
 const nextButton = document.getElementById('next');
@@ -92,6 +97,8 @@ function showQuestion() {
     const current = examQuestions[currentQuestionIndex];
     questionElement.textContent = current.question;
 
+    progressDiv.textContent = `Pregunta ${currentQuestionIndex + 1} de ${totalExamQuestions}`;
+
     optionsElement.innerHTML = '';
     current.options.forEach((opt, index) => {
         const btn = document.createElement('button');
@@ -109,9 +116,15 @@ function selectAnswer(index) {
     buttons.forEach((btn, idx) => {
         btn.disabled = true;
         if (idx === current.answer) {
+
+            btn.classList.add('correct');
+        } else if (idx === index) {
+            btn.classList.add('wrong');
+
             btn.style.backgroundColor = '#c8e6c9';
         } else if (idx === index) {
             btn.style.backgroundColor = '#ffcdd2';
+
         }
     });
 
@@ -134,6 +147,7 @@ function endQuiz() {
     startButton.parentElement.classList.remove('hide');
     saveStats();
     loadStats();
+    progressDiv.textContent = '';
 
     const pass = correctCount >= 15; // 15/20 para pasar
     resultDiv.textContent = `Tuviste ${correctCount} aciertos y ${wrongCount} errores. ${pass ? '¡Aprobaste!' : 'No aprobaste.'}`;
