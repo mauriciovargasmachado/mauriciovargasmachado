@@ -1,4 +1,39 @@
+
 // La variable global "questions" con 250 preguntas se carga desde questions.js
+
+
+//desarrollar-aplicación-de-estudio-para-examen-de-ciudadanía
+// La variable global "questions" con 250 preguntas se carga desde questions.js
+
+// Banco de preguntas de ejemplo. Puedes expandirlo con todas las preguntas de "Discover Canada".
+const questions = [
+    {
+        question: "¿Cuál es la capital de Canadá?",
+        options: ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+        answer: 1
+    },
+    {
+        question: "¿Quién es la jefa de Estado de Canadá?",
+        options: ["El Primer Ministro", "La Reina", "El Gobernador General", "El Presidente"],
+        answer: 1
+    },
+    {
+        question: "¿Cuántas provincias tiene Canadá?",
+        options: ["10", "3", "13", "5"],
+        answer: 0
+    },
+    {
+        question: "¿Cuál es el animal nacional de Canadá?",
+        options: ["Castor", "Alce", "Ganso", "Caribú"],
+        answer: 0
+    },
+    {
+        question: "¿Qué representan las hojas de arce en la bandera canadiense?",
+        options: ["La naturaleza", "Las provincias", "La independencia", "La corona"],
+        answer: 1
+    }
+    // Agrega aquí el resto de preguntas del libro
+];
 
 const totalExamQuestions = 20;
 let examQuestions = [];
@@ -8,6 +43,7 @@ let wrongCount = 0;
 
 const statsDiv = document.getElementById('stats');
 const questionContainer = document.getElementById('question-container');
+
 const progressDiv = document.getElementById('progress');
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
@@ -60,6 +96,7 @@ function showQuestion() {
 
     const current = examQuestions[currentQuestionIndex];
     questionElement.textContent = current.question;
+
     progressDiv.textContent = `Pregunta ${currentQuestionIndex + 1} de ${totalExamQuestions}`;
 
     optionsElement.innerHTML = '';
@@ -79,9 +116,15 @@ function selectAnswer(index) {
     buttons.forEach((btn, idx) => {
         btn.disabled = true;
         if (idx === current.answer) {
+
             btn.classList.add('correct');
         } else if (idx === index) {
             btn.classList.add('wrong');
+
+            btn.style.backgroundColor = '#c8e6c9';
+        } else if (idx === index) {
+            btn.style.backgroundColor = '#ffcdd2';
+
         }
     });
 
