@@ -1,3 +1,4 @@
+const progressDiv = document.getElementById('progress');
 //desarrollar-aplicación-de-estudio-para-examen-de-ciudadanía
 // La variable global "questions" con 250 preguntas se carga desde questions.js
 
@@ -34,8 +35,10 @@ const questions = [
 
 const totalExamQuestions = 20;
 let examQuestions = [];
-let currentQuestionIndex = 0;
-let correctCount = 0;
+    progressDiv.textContent = `Pregunta ${currentQuestionIndex + 1} de ${totalExamQuestions}`;
+            btn.classList.add('correct');
+            btn.classList.add('wrong');
+    progressDiv.textContent = '';
 let wrongCount = 0;
 
 const statsDiv = document.getElementById('stats');
