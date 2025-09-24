@@ -9,7 +9,7 @@
 
 <br/>
 
-<p align="center">
+<p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=mauriciovargasmachado&show_icons=true&locale=en" alt="mauriciovargasmachado" />
 </p>
 
