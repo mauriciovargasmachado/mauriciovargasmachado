@@ -4,17 +4,11 @@
 <br/>
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mauriciovargasmachado&show_icons=true&locale=en&layout=compact" alt="mauriciovargasmachado" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mauriciovargasmachado&show_icons=true&locale=en&layout=compact" alt="mauriciovargasmachado" /> <bl></bl>
   <img src="https://github-readme-stats.vercel.app/api?username=mauriciovargasmachado&show_icons=true&locale=en" alt="mauriciovargasmachado" />
 </p>
 
-<br/>
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=mauriciovargasmachado&show_icons=true&locale=en" alt="mauriciovargasmachado" />
-</p>
-
-<br/>
+<br/><br/>
 
 ### Languages and Tools:
 <p align="left">
