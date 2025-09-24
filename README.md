@@ -4,7 +4,8 @@
 <br/>
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mauriciovargasmachado&show_icons=true&locale=en&layout=compact" alt="mauriciovargasmachado" /> <bl></bl>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mauriciovargasmachado&show_icons=true&locale=en&layout=compact" alt="mauriciovargasmachado" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github-readme-stats.vercel.app/api?username=mauriciovargasmachado&show_icons=true&locale=en" alt="mauriciovargasmachado" />
 </p>
 
